@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Text Widget Test</title>
+    <style>
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /*base box styling with fixed dimensions, border, and padding */
+        .box {
+            width: 300px;  
+            height: 200px; 
+            border: 2px solid rgb(56, 51, 51);
+            padding: 15px; 
+            background-color: white;
+        }
+
+        h3 {
+            margin-top: 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+
+        /*Visible */
+        .overflow-visible {
+            overflow: visible; 
+        }
+
+        /*Hidden */
+        .overflow-hidden {
+            overflow: hidden; 
+        }
+
+        /*Scroll */
+        .overflow-scroll {
+            overflow: scroll; 
+        }
+
+        /*Auto */
+        .overflow-auto {
+            overflow: auto; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box overflow-visible">
+        <h3>1. Visible</h3>
+        <p>Cyber Monday may be over, but many Cyber Week deals are still going strong. Whether you're checking off your holiday shopping or snagging a special treat for yourself, now's the time to pounce. The WIRED Reviews team has hundreds of years of collective experience tracking actual deals—not just inflated markdowns—on products we've hand-tested. Below, you'll find everything that made the cut and is still on sale: True discounts on the gear and gadgets we'd recommend to our friends and family.</p>
+    </div>
+
+    <div class="box overflow-hidden">
+        <h3>2. Hidden</h3>
+        <p>Cyber Monday may be over, but many Cyber Week deals are still going strong. Whether you're checking off your holiday shopping or snagging a special treat for yourself, now's the time to pounce. The WIRED Reviews team has hundreds of years of collective experience tracking actual deals—not just inflated markdowns—on products we've hand-tested. Below, you'll find everything that made the cut and is still on sale: True discounts on the gear and gadgets we'd recommend to our friends and family.</p>
+    </div>
+
+    <div class="box overflow-scroll">
+        <h3>3. Scroll</h3>
+        <p>Cyber Monday may be over, but many Cyber Week deals are still going strong. Whether you're checking off your holiday shopping or snagging a special treat for yourself, now's the time to pounce. The WIRED Reviews team has hundreds of years of collective experience tracking actual deals—not just inflated markdowns—on products we've hand-tested. Below, you'll find everything that made the cut and is still on sale: True discounts on the gear and gadgets we'd recommend to our friends and family.</p>
+    </div>
+
+    <div class="box overflow-auto">
+        <h3>4. Auto</h3>
+        <p>Cyber Monday may be over, but many Cyber Week deals are still going strong. Whether you're checking off your holiday shopping or snagging a special treat for yourself, now's the time to pounce. The WIRED Reviews team has hundreds of years of collective experience tracking actual deals—not just inflated markdowns—on products we've hand-tested. Below, you'll find everything that made the cut and is still on sale: True discounts on the gear and gadgets we'd recommend to our friends and family.</p>
+    </div>
+
+</body>
+</html>
