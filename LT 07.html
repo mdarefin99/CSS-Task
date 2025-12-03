@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog - Sticky Header</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+       
+        header {
+           
+            position: sticky;
+            top: 0;
+            
+          
+            background-color: #ffffff;
+            padding: 15px 40px;
+            border-bottom: 3px solid blue; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+       
+        .container {
+            max-width: 800px;
+            margin: 0 auto; 
+            /*Margin to separate content from header visually. 
+               Note: Unlike 'fixed', 'sticky' reserves its own space in the DOM, 
+               so this margin is purely for aesthetics, not to prevent overlap. */
+            padding-top: 40px; 
+            padding-bottom: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #222;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="site-title">DailyTechDoses</div>
+        <nav>
+            <a href="#">Reviews</a>
+            <a href="#">Tutorials</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>The WIRED Guide to Digital Opsec for Teens</h1>
+        <span class="date">Posted on Dec 1, 2025 by Arefin</span>
+
+        <p><strong>Practicing good “operations security” is essential to staying safe online. Here’s a complete guide for teenagers (and anyone else) who wants to button up their digital lives.</strong></p>
+
+        <p>Teenagers have always been formidable hackers. In fact, in recent years, some of the most high-profile and brazen digital attacks around the world have been carried out by teens. But even if you're not a hacker, you’re probably still a prolific user of digital tools and social platforms. And whether you've never given much thought to your digital privacy and security or you've started to rein in your data, you can use this guide to implement basic precautions and keep operations security in mind. In other words, this guide contains advice and ideas to help you conceptualize how people can find out information about you from your digital activities—and start to minimize what’s out there in ways you didn’t intend.</p>
+
+        <h2>What Opsec Is and Why It Matters</h2>
+        <p>In digital operations security, “operations” are the things that make up online activity like messages, searches, AI chats, websites, photos, accounts, passwords, and so on. The “security” piece has two goals. One is secrecy: No one sees stuff they shouldn’t. The other is availability: You don’t lose access to your data and accounts.</p>
+        
+        <p>Opsec is hard, because secrecy and availability conflict. The more secret you make things, the easier it is to accidentally lock yourself out and vice versa. Good security is a balance.</p>
+        
+        <p>It's worth saying, though, that opsec is not paranoia. Just because you’re (probably) not a cartel boss, that doesn’t mean your privacy isn't important. For you, it’s about not being an easy target and building habits that prevent disasters. For example, your social media accounts getting hacked, losing all your photos from the last few years, or your school reading your AI chats.</p>
+
+        <h2>Memorable Opsec Fails</h2>
+        <p>“Signalgate,” 2025: US officials discussed war plans in a group chat on the mainstream, secure messaging app Signal. Then they accidentally added a journalist to the chat. Subsequently, US defense secretary Pete Hegseth famously (embarrassingly) messaged the chat, “we are currently clean on OPSEC.” At least some members of the chat were also potentially using a modified, insecure version of Signal. All extremely not clean on opsec.</p>
+        
+        <p>Gmail Drafts Exposed, 2012: Then-CIA director David Petraeus and his paramour shared a Gmail account to hide their communications by leaving them for each other to see as draft messages. Kind of ingenious given that this was before most texting or messaging apps offered timed disappearing/ephemeral messages, but the FBI figured out the strategy.</p>
+
+        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
+        <br><br><br><br><br><br>
+        
+        <p><strong>Keep scrolling up and down to see the header stick to the top!</strong></p>
+        
+        
+    </div>
+
+</body>
+</html>
