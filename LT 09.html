@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal Layout</title>
+    <style>
+       
+        * {
+            box-sizing: border-box; 
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+       /* Layout using inline-block */
+        .container {
+            width: 100%;
+            font-size: 0; 
+            background-color: #ddd; 
+        }
+
+        .column {
+            display: inline-block;
+            vertical-align: top; 
+            font-size: 16px; 
+            padding: 20px;
+            border: 2px solid #333;
+            margin-right: 1%; 
+        }
+
+        /* Removing margin from the last column to fit perfectly */
+        .column:last-child {
+            margin-right: 0;
+        }
+
+        .sidebar {
+            width: 19%; 
+            background-color: #e0f7fa; 
+        }
+
+        .main-content {
+            width: 59%;
+            background-color: #ffffff; 
+        }
+
+        .advertisement {
+            width: 19%; 
+            background-color: #fff9c4; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li>World News</li>
+                <li>Technology</li>
+                <li>Sports</li>
+                <li>Politics</li>
+            </ul>
+        </div><div class="column main-content">
+            <h1>CSS display: inline-block</h1>
+            <p>inline-block property combines the features of both inline and block elements.
+
+An element with display: inline-block will appear on the same line as other inline or inline-block elements. In addition, you can set the width, height, margin-top, and margin-bottom properties for the element (like block elements).
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:</p>
+            <p>Building layouts with inline-block requires careful handling of whitespace and vertical alignment.</p>
+        </div><div class="column advertisement">
+            <h3>Sponsored</h3>
+            <div style="background: orangered; padding: 10px; border: 1px dashed orange;">
+                <strong>Buy Coffee!</strong>
+                <p>Fuel your coding sessions.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
